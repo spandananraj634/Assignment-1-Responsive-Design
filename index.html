@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo"><img src="./Spotify logo.png" width="200px" height="50px"></div>
+            <nav class="navigation">
+                <ul>
+                    <li><img src="./Home.png" width="20px" height="20px"> Home</li>
+                    <li><img src="./Search.png" width="20px" height="20px"> Search</li>
+                    <li><img src="./Your library.png" width="20px" height="20px"> Your Library</li>                     
+                    <li class="spaced-item"><img src="./Create.png" width="20px" height="20px"> Create Playlist</li>
+                    <li><img src="./Liked.png" width="20px" height="20px"> Liked Songs</li>
+                    <li><img src="./your episodes.png" width="20px" height="20px"> Your Episodes</li>
+                </ul>
+            </nav>
+            <div class="favorites">
+                <ul>
+                    <li>FAV</li>
+                    <li>Daily Mix 1</li>
+                    <li>Discover Weekly</li>
+                    <li>Malayalam</li>
+                    <li>Dance / Electronic Mix</li>
+                    <li>EDM / Popular</li>
+                </ul>
+            </div>
+            <div class="install-app">Install App</div>
+        </aside>
+        <main class="main-content">
+            <img src="./top arrow navigation.png" width="100px" height="50px">
+            <header class="header">Good morning</header>
+            <section class="playlists">
+                <div class="playlist"><img src="./Liked.png" height="60px" width="60px"> Liked Songs</div>
+                <div class="playlist"><img src="./image2.png" height="60px" width="60px"> Dance / Electronic Mix</div>
+                <div class="playlist"><img src="./image4.png" height="60px" width="60px"> Neffex Playlist</div>
+                <div class="playlist"><img src="./image3.png" height="60px" width="60px"> K/DA</div>
+                <div class="playlist"><img src="./image1.png" height="60px" width="60px"> Liked Songs</div>
+            </section>
+            <section class="shows">
+                <h2>Shows you might like</h2>
+                <div class="show"><img src="./image9.png" height="40px" width="40px"> Weekly Motivation</div>
+                <div class="show"><img src="./image8.png" height="40px" width="40px"> MEDITATION SELF</div>
+                <div class="show"><img src="./image7.png" height="40px" width="40px"> Words beyond actions</div>
+                <div class="show"><img src="./image6.png" height="40px" width="40px"> The Alexa Show</div>
+                <div class="show"><img src="./image5.png" height="40px" width="40px"> The Stories of...</div>
+                <div class="show"><img src="./image10.png" height="40px" width="40px"> Motivation Daily</div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <img src="./image11.png" class="left-image" height="30px" width="30px">
+        <div class="playing">
+            <span id="song-info">Dreaming On  <br>NEFFEX<br></span>
+            <img src="./Music Player Options.png" width="500px" class="play-button" id="play-button">
+            <img src="./Right options.png" width="200px" class="right_option">
+            
+        </div>
+    </footer>
+    <audio id="audio-player" src="./Dreaming On - NEFFEX.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

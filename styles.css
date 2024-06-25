@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.navigation ul, .favorites ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation ul li, .favorites ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.install-app {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1db954;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #181818;
+}
+
+.header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.playlists {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.playlist {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.playlist img {
+    margin-right: 10px;
+}
+
+.spaced-item {
+    margin-top: 150px;
+}
+
+.shows {
+    margin-bottom: 20px;
+}
+
+.shows h2 {
+    margin-bottom: 20px;
+}
+
+.shows .show {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.shows .show img {
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.footer .left-image {
+    margin-right: 20px;
+}
+
+.footer .playing {
+    display: flex;
+    align-items: center;
+}
+
+.footer .playing img {
+    margin-right: 10px;
+}
+
+.footer .play-button {
+    cursor: pointer;
+}
+
+.footer .right_option{
+    align-items: end;
+    padding-right: 10px;
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        height: 100vh;
+    }
+
+    .main-content {
+        height: calc(100vh - 60px);
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
